@@ -1,3 +1,15 @@
+<!--
+  Cyrus — Bearsoft's agentic harness, forked from tailcallhq/forgecode.
+  See FORK.md for fork rationale, upstream sync policy, and contribution flow.
+  The upstream Forge README follows below, preserved verbatim.
+-->
+
+> **🛠️ Cyrus** — Bearsoft's agentic-pipeline harness, forked from [tailcallhq/forgecode](https://github.com/tailcallhq/forgecode).
+> Fork rationale, sync policy, and contribution flow: [FORK.md](./FORK.md).
+> Upstream Forge README follows.
+
+---
+
 <h1 align="center">⚒️ Forge: AI-Enhanced Terminal Development Environment</h1>
 <p align="center">A comprehensive coding agent that integrates AI capabilities with your development environment</p>
 
