@@ -43,6 +43,14 @@ Forking instead of using upstream directly:
 2. **Bearsoft-specific feature** — open a Linear ticket in the [cyrus project](https://linear.app/thebearsoft/project/cyrus-8d538a0fa893), branch from `main` as `feat/cra-NNN-...`, PR into `main`.
 3. **Sync from upstream** — `sync/upstream-YYYY-MM-DD` branch, automated where possible.
 
+## Git hooks
+
+**No git hooks.** Cyrus follows upstream `tailcallhq/forgecode` here — no `.husky/`, no `lefthook.yml`, no `.pre-commit-config.yaml`, no `prepare` script. Quality gates (formatting, linting, tests) run in CI only.
+
+The old Bearsoft pipeline (pre-2026-04-27) used `~/.githooks/` for commit-msg, pre-commit, pre-push, and a worktree manager. Those hooks were tied to the deleted Python `ap-init`/`cyrus` CLIs and have been archived under `Projects/cyrus-old-archive/githooks-backup/` in the Obsidian vault for reference.
+
+If we later decide we want hooks, we'll write fresh ones against the Rust workflow (`cargo fmt`, `cargo clippy`, `cargo test`) rather than resurrect the Python-coupled archive.
+
 ## Apache-2.0 compliance
 
 - `LICENSE` preserved verbatim.
@@ -52,6 +60,7 @@ Forking instead of using upstream directly:
 
 ## See also
 
+- [`BUILDING.md`](./BUILDING.md) — toolchain, system dependencies, build verification.
 - [`README.md`](./README.md) — Forge's full README (Cyrus banner prepended).
 - [Linear: cyrus project](https://linear.app/thebearsoft/project/cyrus-8d538a0fa893) — task tracking.
 - [`~/cyrus-purge-report-20260427-110324.md`](file:~/cyrus-purge-report-20260427-110324.md) — what the previous Cyrus stack was, and why it was retired.

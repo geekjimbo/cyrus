@@ -6,6 +6,7 @@
 
 > **🛠️ Cyrus** — Bearsoft's agentic-pipeline harness, forked from [tailcallhq/forgecode](https://github.com/tailcallhq/forgecode).
 > Fork rationale, sync policy, and contribution flow: [FORK.md](./FORK.md).
+> Build prerequisites and verification: [BUILDING.md](./BUILDING.md).
 > Upstream Forge README follows.
 
 ---
